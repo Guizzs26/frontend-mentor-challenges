@@ -1,0 +1,147 @@
+/* Variables */
+
+:root {
+  /* Colors */
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --font-family-figtree: "Figtree", sans-serif;
+
+  /* Font size */
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-l: 24px;
+
+  /* Line Height */
+  --line-height-150: 150%;
+
+  /* Font weight */
+  --font-weight-regular: 500;
+  --font-weight-extra-bold: 800;
+}
+
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-figtree);
+  line-height: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-gray-950);
+  background-color: var(--color-yellow);
+}
+
+/* Card layout */
+
+.article-card {
+  width: 38.4rem;
+  height: 52.2rem;
+
+  padding: 2.4rem;
+  border: 1px solid var(--color-gray-950);
+  border-radius: 20px;
+
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+
+  background-color: var(--color-white);
+}
+
+/* Image */
+
+.illustration {
+  height: 20rem;
+
+  margin-bottom: 2.4rem;
+  border-radius: 10px;
+}
+
+/* Content box */
+
+.content-box {
+  height: 19.4rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.category {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-150);
+
+  display: inline-block;
+
+  margin-bottom: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+
+  background-color: var(--color-yellow);
+}
+
+.published-date {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-150);
+
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-150);
+
+  margin-bottom: 1.2rem;
+}
+
+.description {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-150);
+
+  color: var(--color-gray-500);
+}
+
+/* Author box */
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.author-image {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.author-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-150);
+}
