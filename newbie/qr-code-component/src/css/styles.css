@@ -1,0 +1,114 @@
+/* Variables */
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --font-family-outfit: "Outfit", sans-serif;
+
+  /* Font Sizes */
+  --font-size-l: 22px;
+  --font-size-md: 15px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-120: 120%;
+  --line-height-140: 140%;
+
+  /* Letter Spacing */
+  --letter-spacing-default: 0.2px;
+}
+
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-outfit);
+  line-height: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-slate-900);
+  background-color: var(--color-slate-300);
+}
+
+/* Qr code card layout */
+
+.qrcode-card {
+  width: 32rem;
+  height: 50rem;
+
+  padding: 1.6rem 1.6rem 4rem 1.6rem;
+  border-radius: 20px;
+
+  border: 1px solid var(--color-black);
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+
+  background-color: var(--color-white);
+}
+
+/* Image */
+
+.qrcode-image {
+  height: 28.8rem;
+
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* Content box */
+
+.qrcode-text-box {
+  width: 28.8rem;
+  height: 13.1rem;
+
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-120);
+
+  margin-bottom: 1.6rem;
+
+  color: var(--color-slate-900);
+}
+
+.description {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-140);
+  letter-spacing: var(--letter-spacing-default);
+
+  color: var(--color-slate-500);
+}
