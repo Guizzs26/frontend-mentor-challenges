@@ -1,0 +1,175 @@
+/* Variables */
+
+:root {
+  /* Colors - Primary */
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-hover-dark-cyan: hsl(158, 36%, 30%);
+  --color-cream: hsl(30, 38%, 92%);
+
+  /* Colors - Neutral */
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-fraunces: "Fraunces", serif;
+
+  /* Font Size */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-md: 14px;
+  --font-size-l: 32px;
+
+  /* Font Weights */
+  --font-weight-montserrat-regular: 500;
+  --font-weight-montserrat-bold: 700;
+  --font-weight-fraunces-bold: 700;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-weight: var(--font-weight-montserrat-regular);
+  font-family: var(--font-family-montserrat);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-dark-grayish-blue);
+  background-color: var(--color-cream);
+}
+
+/* Product card layout */
+
+.product-card {
+  max-width: 60rem;
+
+  display: flex;
+  gap: 3.2rem;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: var(--color-white);
+}
+
+/* Image layout and styles */
+
+.product-image {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Text content layout and styles */
+
+.product-content-box {
+  padding: 3.2rem 3.2rem 3.2rem 0;
+}
+
+.subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-montserrat-regular);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  display: inline-block;
+
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-fraunces-bold);
+  font-family: var(--font-family-fraunces);
+  line-height: 32px;
+
+  margin-bottom: 2.4rem;
+
+  color: var(--color-very-dark-blue);
+}
+
+.description {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-montserrat-regular);
+  line-height: 23px;
+  text-align: left;
+
+  margin-bottom: 2.9rem;
+
+  color: var(--color-dark-grayish-blue);
+}
+
+/* Price box layout and styles */
+
+.price-box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.full-price {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-fraunces-bold);
+  font-family: var(--font-family-fraunces);
+
+  margin-right: 1.9rem;
+
+  color: var(--color-dark-cyan);
+}
+
+.discounted-price {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-montserrat-regular);
+  line-height: 23px;
+  text-decoration: line-through;
+}
+
+/* Button */
+
+.cart-btn {
+  width: 23.6rem;
+  height: 4.8rem;
+
+  font-weight: var(--font-weight-montserrat-bold);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.161rem;
+
+  transition: all 0.3s ease-in-out;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  color: var(--color-white);
+  background-color: var(--color-dark-cyan);
+}
+
+.cart-btn:hover {
+  background-color: var(--color-hover-dark-cyan);
+}
