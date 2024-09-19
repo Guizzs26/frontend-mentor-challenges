@@ -1,0 +1,199 @@
+/* Variables */
+
+:root {
+  /* Colors - Primary */
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+
+  /* Colors - Neutral */
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family-redhat: "Red Hat Display", sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 14px;
+  --font-size-sm: 15px;
+  --font-size-md: 16px;
+  --font-size-l: 28px;
+
+  /* Font Weights */
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-redhat);
+  line-height: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-desaturated-blue);
+
+  background: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: var(--color-pale-blue);
+}
+
+/* Card layout */
+
+.order-summary-card {
+  width: 45rem;
+
+  border-radius: 20px;
+  box-shadow: 0 40px 40px -20px rgb(13, 48, 189, 0.1518);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-color: var(--color-white);
+}
+
+/* Image */
+
+.illustration {
+  height: 22rem;
+
+  margin-bottom: 4.5rem;
+}
+
+/* Title and description styles */
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-black);
+
+  margin-bottom: 1.7rem;
+
+  color: var(--color-dark-blue);
+}
+
+.description {
+  width: 35.4rem;
+  height: 7.4rem;
+
+  text-align: center;
+  line-height: 26px;
+
+  margin-bottom: 2rem;
+
+  color: var(--color-desaturated-blue);
+}
+
+/* Box plan and content layout */
+
+.plan {
+  margin-bottom: 3.2rem;
+  padding: 2.5rem 2.4rem;
+  border-radius: 11px;
+
+  background-color: var(--color-very-pale-blue);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+/* Plan info's layout and styles */
+
+.music-icon {
+  margin-right: 2rem;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  margin-right: 9.4rem;
+}
+
+.plan-name {
+  font-weight: var(--font-weight-black);
+
+  color: var(--color-dark-blue);
+}
+
+.plan-change-link:link,
+.plan-change-link:visited {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+
+  transition: all 0.3s ease-in-out;
+
+  color: var(--color-bright-blue);
+}
+
+.plan-change-link:hover,
+.plan-change-link:active {
+  color: var(--color-dark-blue);
+}
+
+/* Button */
+
+.btn {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-black);
+  text-align: center;
+
+  transition: all 0.3s ease-in-out;
+
+  padding: 1.5rem 10.2rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 20px 20px 0 rgb(56, 42, 225, 0.1903);
+
+  color: var(--color-white);
+  background-color: var(--color-bright-blue);
+}
+
+.btn:hover {
+  background-color: var(--color-dark-blue);
+  transform: scale(1.05);
+}
+
+/* Footer */
+
+.cancel-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-black);
+
+  padding-bottom: 4.8rem;
+
+  color: var(--color-desaturated-blue);
+}
