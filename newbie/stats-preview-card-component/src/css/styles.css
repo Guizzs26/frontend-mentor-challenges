@@ -1,0 +1,155 @@
+/* Variables */
+
+:root {
+  /* Colors - Primary */
+  --color-bg-main: hsl(233, 47%, 7%);
+  --color-bg-card: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+
+  /* Colors - Neutral */
+  --color-text-white: hsl(0, 0%, 100%);
+  --color-text-white-transparent: hsla(0, 0%, 100%, 0.75);
+  --color-text-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+  /* Typography */
+  --font-family-inter: "Inter", sans-serif;
+  --font-family-lexend: "Lexend Deca", sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 15px;
+  --font-size-md: 24px;
+  --font-size-l: 36px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-inter);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg-main);
+}
+
+/*  */
+
+.stats-card {
+  max-width: 111rem;
+
+  border-radius: 8px;
+  box-shadow: 0 20px 20px -10px rgb(23, 25, 41, 0.2031);
+
+  display: grid;
+  grid-template-columns: 1fr 540px;
+
+  overflow: hidden;
+
+  background-color: var(--color-bg-card);
+}
+
+/* Image box */
+
+.image {
+  background-image: url("/images/image-header-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ab5cdb;
+  background-blend-mode: multiply;
+}
+
+/* Content box layout */
+
+.text-content {
+  padding: 7.1rem 9.5rem 5.9rem 7.15rem;
+}
+
+/* Text */
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  line-height: 44px;
+
+  margin-bottom: 2.5rem;
+
+  color: var(--color-text-white);
+}
+
+.title span {
+  color: var(--color-accent);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 25px;
+
+  margin-bottom: 7.2rem;
+
+  opacity: 0.75;
+
+  color: var(--color-text-white);
+}
+
+/* Stats layout */
+
+.stats-info {
+  width: 34.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Stats value text */
+
+.stat-value {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+
+  color: var(--color-text-white);
+}
+
+.stat-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: 1px;
+
+  opacity: 0.6;
+
+  color: var(--color-text-white);
+}
